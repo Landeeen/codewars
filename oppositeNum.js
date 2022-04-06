@@ -1,0 +1,3 @@
+function opposite() {
+    return -number
+}
