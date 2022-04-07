@@ -7,7 +7,32 @@ function solution(str){
 // return sum of positives
 
 function positiveSum(arr) {
-  arr.forEach(element => { if(element > 0){element += }
-      
-  });
+  return arr.reduce((a,b)=> a + (b > 0 ? b : 0),0);
 }
+
+// find the smallest number in array
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    var sorted = args.slice().sort(function(a, b) {
+  return a - b;
+});
+
+var smallest = sorted[0]                   
+return smallest
+  }
+}
+
+// remove first and last characters
+
+function removeChar(str){
+
+  return str.slice(1,-1)
+ 
+ };
+ 
+//  repeat string
+
+function repeatStr (n, s) {
+  return  s.repeat(n)
+   
+ }
