@@ -36,3 +36,18 @@ function repeatStr (n, s) {
   return  s.repeat(n)
    
  }
+
+//  summation of number
+
+var summation = function (num) {
+  let total = 0
+  for(let i = 0; i <= num; i++){
+    total += i
+  }
+  return total
+    
+}
+
+// or shorter
+
+const summation = n => n * (n + 1) / 2;
