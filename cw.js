@@ -51,3 +51,34 @@ var summation = function (num) {
 // or shorter
 
 const summation = n => n * (n + 1) / 2;
+
+// get string of numbers backwards into array
+
+function digitize(n) {
+  
+  let string = n.toString()
+
+  let arr = []
+  
+  for (let i = 0; i <= (string.length - 1); i++) {
+    let num = string.charAt(i)
+    arr.unshift(number(num))
+    
+  }
+  return arr
+}
+
+// better option
+
+function digitize(n) {
+  return String(n).split('').map(Number).reverse()
+}
+
+// return amount of water needed to drink if you need to drink 0,5 l in an hour
+
+function litres(time) {
+  let water = Math.floor(time / 2)
+  return water
+  
+}
+const litres = time => Math.floor(time * 0.5);
